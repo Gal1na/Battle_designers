@@ -1,0 +1,129 @@
+.footer {
+	padding-top: 75px;
+	padding-bottom: 60px;
+	background-color: $color-light-gray;
+	text-align: center;
+
+	@media (max-width: $screen-sm-max) {  		
+		padding-top: 50px;
+		padding-bottom: 50px;
+	} 
+
+	&__title {
+		font-size: $font-size-h3;
+    line-height: $line-height-md;
+
+		@media (min-width: $screen-lg-min) {  		
+			margin-bottom: 45px;
+  	} 
+  }
+
+	&__description {
+    margin-bottom: 25px;
+
+    @media (max-width: $screen-sm-max) {  		
+  		margin-bottom: 15px;
+  	} 
+	}
+
+  &__form {
+    margin-bottom: 85px;
+    @media (max-width: $screen-lg-max) {
+      margin-bottom: 65px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+.form-subscribe {
+  display: flex;
+  justify-content: center;	
+
+	@media (max-width: $screen-xs-max) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__field {
+		min-width: 387px;
+		margin-right: 8px;
+		padding: 0.888888em 1.111111em 1em;
+		border: 2px solid transparent;
+		border-radius: 10px;
+		background-color: $bg-color-primary;
+		font-size: 18px;
+		
+    @media (max-width: $screen-xs-max) {
+      min-width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+      font-size: $font-size-sm;
+    }
+
+		&:hover {
+      @media (min-width: $screen-md-min) {
+        border: 2px solid $input-color;
+        box-shadow: 0 0 15px lighten($input-color, 10);
+      }
+    }
+
+		&:focus {
+      box-shadow: 0 0 15px lighten($input-color, 10);
+		}
+
+		&:active {
+      background-color: darken($color-light-gray, 25);
+		}
+	}
+}
+
+.social-list {
+	display: inline-flex;
+  flex-direction: row;
+	list-style: none;
+	
+	&__item:not(:last-child) {
+			margin-right: 7px;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 64px;
+		height: 64px;
+		background-color: $color-pale-gray;
+		border: 2px solid $color-pale-gray;
+		border-radius: 50%;
+		font-size: 18px;
+		color: $font-color-secondary;
+		
+		@media (max-width: $screen-sm-max) {
+			width: 50px;
+    	height: 50px;
+		}
+
+		&:hover {
+      @media (min-width: $screen-md-min) {
+       color: $color-pale-gray;
+       background-color: $bg-color-primary;
+       box-shadow: 0 0 10px $color-pale-gray;
+     }
+   }
+
+		&:focus {
+			color: $color-pale-gray;
+			background-color: $bg-color-primary;
+      box-shadow: 0 0 10px darken($color-pale-gray, 35);
+		}
+
+		&:active {
+			color: $font-color-secondary;
+			border-color: darken($color-pale-gray, 25);
+			background-color: darken($color-pale-gray, 10);
+		}
+	}
+}

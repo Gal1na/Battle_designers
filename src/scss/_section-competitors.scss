@@ -1,0 +1,93 @@
+.section-competitors {
+	background-image: linear-gradient(to bottom, #339 0, #f0c 100%);
+	color: $font-color-secondary;
+	text-align: center;
+
+	&__description {
+		margin-bottom: 45px;
+	}
+
+	&__list-cards {
+    margin-bottom: 40px;
+
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 25px;
+    } 
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 15px;
+    } 
+  }
+}
+
+.enumerator {
+	max-width: 860px;
+	margin-left: auto;
+  margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: $font-family-secondary;
+
+	&__item {
+		padding: 33px 38px 25px;
+		background-color: $color-dark-purple;
+		flex-shrink: 0;
+    flex-basis: 18.5%;
+		line-height: 1;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      padding: 30px 25px 25px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding: 25px 20px 20px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 15px 10px;
+    }
+
+		&--outline {
+      background-color: transparent;
+      border: 2px solid #faaced;
+		}
+	}
+
+  &__number {
+    $font-size-xxxlg: 72px;
+
+		font-size: $font-size-xxxlg;
+    font-weight: 700;
+    margin-bottom: 12px;
+
+    @media (max-width: $screen-md-max) {
+      font-size: $font-size-xxxlg*$k-md;
+    } 
+
+    @media (max-width: $screen-sm-max) {
+      font-size: $font-size-xxxlg*$k-sm;
+    } 
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 35px;
+    } 
+	}
+
+	&__dimension {
+    font-size: 18px;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px*$k-sm;
+    } 
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 10px;
+    } 
+	}
+}

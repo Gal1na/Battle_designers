@@ -1,0 +1,81 @@
+$WHITE: #fff;
+$PINK: #e71cb4;
+$DARK_PINK: #c60ebe;
+$DARK_PURPLE: #460340;
+$LIGHT_GRAY: #eee;
+$PALE_GRAY: #ddd;
+$DARK_GRAY: #444;
+$BLACK: #000;
+
+$color-white: $WHITE;
+$color-pink: $PINK;
+$color-dark-pink: $DARK_PINK;
+$color-dark-purple: $DARK_PURPLE;
+$color-light-gray: $LIGHT_GRAY;
+$color-pale-gray: $PALE_GRAY;
+$color-dark-gray: $DARK_GRAY;
+$color-black: $BLACK;
+
+// Background color
+$bg-color-primary: $WHITE;
+$bg-color-secondary: $BLACK;
+ 
+ // Fonts
+$font-family-base: 'Poppins', 'Arial', 'Helvetica', sans-serif;
+$font-family-secondary: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+$line-height-base: 1.5;
+$line-height-lg: 1.818181;
+$line-height-md: 1.2;
+
+$font-size-base: 16px;
+$font-size-h1: 65px;
+$font-size-h2: 62px;
+$font-size-h3: 36px;
+$font-size-h4: 30px;
+$font-size-xxlg: 40px;
+$font-size-xlg: 32px;
+$font-size-lg: 24px;
+$font-size-md: 22px;
+$font-size-sm: 14px;
+
+// Font color
+$font-color-primary: $DARK_GRAY;
+$font-color-secondary: $WHITE;
+
+//Controls
+$btn-bg-color-primary: $DARK_PINK;
+$btn-bg-color-secondary: $DARK_GRAY;
+$btn-toggle-menu-color: $WHITE;
+
+$input-color: $DARK_GRAY;
+
+// List of colors for numbering
+$color-list-number: (1: #ffde16, 2: #ffbd9e, 3: #20c9e0, 4: #2eac66, 5: #ff6179, 6: #ffde16);
+
+//Breakpoints
+$screen-xs:                  320px;
+$screen-xs-min:              $screen-xs;
+
+$screen-sm:                  576px;
+$screen-sm-min:              $screen-sm;
+
+$screen-md:                  768px;
+$screen-md-min:              $screen-md;
+
+$screen-lg:                  992px;
+$screen-lg-min:              $screen-lg;
+
+$screen-xlg:                 1200px;
+$screen-xlg-min:             $screen-xlg;
+
+$screen-xs-max:              ($screen-sm-min - 1); // до 575
+$screen-sm-max:              ($screen-md-min - 1); // до 767
+$screen-md-max:              ($screen-lg-min - 1); // до 991
+$screen-lg-max:              ($screen-xlg-min - 1); // до 1199
+
+// Font factors
+$k-xs: 0.6;
+$k-sm: 0.7;
+$k-md: 0.8;
+$k-lg: 0.9;
+$k-xlg: 1;

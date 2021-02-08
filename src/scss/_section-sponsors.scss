@@ -1,0 +1,43 @@
+.section-sponsors {
+  text-align: center;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+
+  &__item {
+    padding: 5px;
+  }
+
+  &__link {
+    display: block;
+    
+    @media (min-width: $screen-md-min) {
+      opacity: 0.5;
+    }
+
+    &:hover {
+      @media (min-width: $screen-md-min) {
+        opacity: 1;
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 10px $font-color-primary;
+    }
+
+    &:active {
+      box-shadow: 0 0 10px $color-dark-gray;
+    }
+  }
+
+  &__logo {
+    @media (max-width: $screen-sm-max) {
+      width: 200px;
+    }
+  }
+}
